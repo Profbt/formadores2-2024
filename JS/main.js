@@ -25,8 +25,8 @@ const Perguntas = [
     {
         enunciado: "Você acredita que  o conhecimento da cultura desenvolvida nas escola indígenas pode melhorar o entendimento da comunidade  em relação às mudanças climáticas atuais ?",
         alternativas: [
-            "Sim, eu acredito que pode ser uma grande contribuição.",
-            "Não, pois o método empregado não é benéfico para o meio ambiente."
+            "Eu acredito que pode ser uma grande contribuição.",
+            "O método empregado não é benéfico para o meio ambiente."
         ]
     },
     {
