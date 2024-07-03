@@ -5,7 +5,7 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 
-const Perguntas = [
+const perguntas = [
     {
         enunciado: "Quais são as  soluções que a escola está buscando  para a inclusão social, bem como as questões relacionadas aos direitos dos povos originários e como isso afeta os impactos causados pelo desmatamento ?",
         alternativas: [
@@ -28,3 +28,7 @@ const Perguntas = [
         ]
     },
    ];
+
+   function mostraPergunta() {
+    caixaPerguntas.textContent = perguntas[0].enunciado;
+   }
