@@ -29,7 +29,7 @@ const perguntas = [
     },
    ];
 
-   let atual = 0;
+   let atual = 2;
    let perguntaAtual;
    function mostraPergunta() {
     perguntaAtual = perguntas[atual];
