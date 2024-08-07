@@ -36,6 +36,10 @@
     .caixa-perguntas{
         padding-bottom: 10px;
     }
+
+    .caixa-alternativas {
+        gap: 20px;
+    }
     
     button{
         background-color: var(--cor-secundaria);
