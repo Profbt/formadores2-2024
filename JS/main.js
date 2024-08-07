@@ -66,14 +66,10 @@ function mostraAlternativas() {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         caixaAlternativas.appendChild(botaoAlternativas);
+        botaoAlternativas.addEventListener('click', function () {
+            atual++;
+            mostraPergunta()
+        });
     }
-}
-
-const button = document.getElementById('myButton');
-button.addEventListener('click', function () {
-    alert('O botão foi clicado!');
-    console.log(button)
-});
-
-mostraPergunta();
+};
 
