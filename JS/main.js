@@ -69,4 +69,11 @@ const perguntas = [
     }
    }
 
+   const button = document.getElementById('mybutton');
+   button.addEventListener('click', function() {
+    alert('o botão foi clicado');
+   })
+
    mostraPergunta();
+
+   
