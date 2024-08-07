@@ -11,69 +11,69 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Técnicas alternativas inovadoras",
-                afirmacao:"A escola está explorando técnicas alternativas inovadoras para promover a inclusão social e abordar as questões relacionadas aos direitos dos povos originários."
+                afirmacao: "A escola está explorando técnicas alternativas inovadoras para promover a inclusão social e abordar as questões relacionadas aos direitos dos povos originários."
 
             },
             {
                 texto: "Ensino multidisciplinar",
-                afirmacao:"educar os alunos sobre a importância da preservação ambiental e os impactos do desmatamento"
+                afirmacao: "educar os alunos sobre a importância da preservação ambiental e os impactos do desmatamento"
             },
-            
+
         ]
     },
     {
         enunciado: "Qual o papel fundamental dos povos indígenas na luta contra a crise climática e preservação ambiental?",
         alternativas: [
             {
-                texto:"Eles têm mostrado que é possível preservar a biodiversidade, manter os serviços ecossistêmicos e acalmar os efeitos das mudanças climáticas.",
-                afirmacao:'Suas técnicas ancestrais têm sido eficazes na manutenção da biodiversidade e na proteção dos ecossistemas'
+                texto: "Eles têm mostrado que é possível preservar a biodiversidade, manter os serviços ecossistêmicos e acalmar os efeitos das mudanças climáticas.",
+                afirmacao: 'Suas técnicas ancestrais têm sido eficazes na manutenção da biodiversidade e na proteção dos ecossistemas'
             },
             {
-                texto:"Eles protegem e promovem a biodiversidade através de práticas tradicionais de manejo sustentável dos recursos naturais.",
-                afirmacao:" A proteção e a gestão de seus territórios garantem a preservação de vastas áreas de florestas"
+                texto: "Eles protegem e promovem a biodiversidade através de práticas tradicionais de manejo sustentável dos recursos naturais.",
+                afirmacao: " A proteção e a gestão de seus territórios garantem a preservação de vastas áreas de florestas"
             },
-                        
+
         ]
     },
     {
         enunciado: "Você acredita que  o conhecimento da cultura desenvolvida nas escola indígenas pode melhorar o entendimento da comunidade  em relação às mudanças climáticas atuais ?",
         alternativas: [
             {
-                texto:"Eu acredito que pode ser uma grande contribuição.",
-                afirmacao:"Através da educação sobre práticas tradicionais e visões de mundo indígenas, a comunidade pode aprender a interconectar os conhecimentos ancestrais com a ciência climática moderna"
+                texto: "Eu acredito que pode ser uma grande contribuição.",
+                afirmacao: "Através da educação sobre práticas tradicionais e visões de mundo indígenas, a comunidade pode aprender a interconectar os conhecimentos ancestrais com a ciência climática moderna"
             },
 
-        {
-            texto:"O método empregado não é benéfico para o meio ambiente.",
-            afirmacao:"Embora promova uma consciência ecológica local, pode não oferecer a base necessária para abordar as questões globais das mudanças climáticas de forma abrangente."
-        },
-           
-       ]
-    },
-   ];
+            {
+                texto: "O método empregado não é benéfico para o meio ambiente.",
+                afirmacao: "Embora promova uma consciência ecológica local, pode não oferecer a base necessária para abordar as questões globais das mudanças climáticas de forma abrangente."
+            },
 
-   let atual = 0;
-   let perguntaAtual;
-   function mostraPergunta() {
+        ]
+    },
+];
+
+let atual = 0;
+let perguntaAtual;
+function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
     mostraAlternativas();
-   }
+}
 
-   function mostraAlternativas() {    
+function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
-            const botaoAlternativas = document.createElement("button");
-            botaoAlternativas.textContent = alternativa.texto;
-            caixaAlternativas.appendChild (botaoAlternativas);
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
-   }
+}
 
-   const button = document.getElementById('mybutton');
-   button.addEventListener('click', function() {
-    alert('o botão foi clicado');
-   })
+const button = document.getElementById('myButton');
+button.addEventListener('click', function () {
+    alert('O botão foi clicado!');
+    console.log(button)
+});
 
-   mostraPergunta();
+mostraPergunta();
 
-   
