@@ -74,9 +74,15 @@ function mostraAlternativas() {
 
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacao = opcaoSelecionada.afirmacao;
-    historiaFinal = afirmacao;
+    historiaFinal += afirmacao + " ";
     atual++;
     mostraPergunta();
 }
 
 mostraPergunta();
+
+function mostraResultado() {
+    caixaPerguntas.textContent = "RESUMO DAS RESPOSTAS";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
